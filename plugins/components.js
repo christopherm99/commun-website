@@ -1,10 +1,22 @@
 import Vue from 'vue'
 import Page from '~/components/Page.vue'
 import Teaser from '~/components/Teaser.vue'
+import Countdown from '~/components/Countdown.vue'
+import Info from '~/components/Info.vue'
+import VButton from '~/components/VButton.vue'
 import Grid from '~/components/Grid.vue'
-import Feature from '~/components/Feature.vue'
+import Player from '~/components/Player.vue'
+import Quote from '~/components/Quote.vue'
+import Committee from '~/components/Committee.vue'
+import Hero from '~/components/Hero.vue'
 
 Vue.component('page', Page)
 Vue.component('teaser', Teaser)
+Vue.component('countdown', Countdown)
+Vue.component('info', Info)
+Vue.component('v-button', VButton)
 Vue.component('grid', Grid)
-Vue.component('feature', Feature)
+Vue.component('player', Player)
+Vue.component('quote', Quote)
+Vue.component('committee', Committee)
+Vue.component('hero', Hero)

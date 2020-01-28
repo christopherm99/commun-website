@@ -14,7 +14,9 @@ module.exports = {
         accent: '#A4123F'
       },
       fontFamily: {
-        display: ['mr-eaves-xl-modern', ...defaultTheme.fontFamily.sans]
+        display: ['mr-eaves-xl-modern', ...defaultTheme.fontFamily.sans],
+        sans: ['source-sans-pro', ...defaultTheme.fontFamily.sans],
+        serif: ['kepler-std', ...defaultTheme.fontFamily.serif]
       }
     }
   },

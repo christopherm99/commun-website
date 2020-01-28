@@ -1,11 +1,12 @@
 <template>
-  <div v-editable="blok" class="util__flex">
-    <component
+  <div v-editable="blok" class="flex items-center p-20">
+    <div
+      v-for="blok in blok.components"
       :key="blok._uid"
-      v-for="blok in blok.columns"
-      :blok="blok"
-      :is="blok.component"
-    ></component>
+      class="inline-block px-20 flex-1"
+    >
+      <component :is="blok.component" :blok="blok" />
+    </div>
   </div>
 </template>
 

@@ -16,10 +16,12 @@
     "moment": "^2.24.0",
     "nuxt": "^2.0.0",
     "odometer": "^0.4.8",
+    "plyr": "^3.5.6",
     "storyblok-nuxt": "^1.0.2",
     "typescript": "^3.7.5",
     "vue-feather-icons": "^5.0.0",
-    "vue-odometer": "^1.0.2"
+    "vue-odometer": "^1.0.2",
+    "vue-plyr": "^6.0.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

@@ -12,20 +12,21 @@
           </span>
         </a>
       </div>
-      <span class="flex items-center">
+      <span class="flex items-center font-sans">
         <transition name="fade" mode="out-in">
           <span
             v-if="visible"
             :key="`${visible}-contents`"
             class="text-xs flex items-center"
           >
-            <span
+            <nuxt-link
               v-for="story in stories[visible]"
               :key="story.uuid"
               class="ml-4"
+              :to="`/${story.full_slug}`"
             >
               {{ story.name }}
-            </span>
+            </nuxt-link>
             <chevrons-left-icon class="p-1 h-6 m-3" />
           </span>
         </transition>

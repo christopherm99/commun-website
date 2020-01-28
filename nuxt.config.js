@@ -1,3 +1,5 @@
+import secrets from './secrets.config'
+
 export default {
   mode: 'spa',
   /*
@@ -18,7 +20,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Zilla+Slab:400,700'
+        href: 'https://use.typekit.net/nak6nmr.css'
       }
     ]
   },
@@ -33,7 +35,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/components', '~/plugins/odometer'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -46,7 +48,12 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    [
+      'storyblok-nuxt',
+      { accessToken: secrets.PREVIEW_KEY, cacheProvider: 'memory' }
+    ]
+  ],
   /*
    ** Build configuration
    */

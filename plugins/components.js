@@ -12,6 +12,7 @@ import Hero from '~/components/Hero.vue'
 import Photo from '~/components/Photo.vue'
 import Heading from '~/components/Heading.vue'
 import Markdown from '~/components/Markdown.vue'
+import Bio from '~/components/Bio.vue'
 
 Vue.component('page', Page)
 Vue.component('teaser', Teaser)
@@ -26,3 +27,4 @@ Vue.component('hero', Hero)
 Vue.component('photo', Photo)
 Vue.component('heading', Heading)
 Vue.component('markdown', Markdown)
+Vue.component('bio', Bio)

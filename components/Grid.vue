@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="flex items-center justify-center py-20"
+    class="flex items-center justify-center pt-5 pb-20"
     :class="(blok.wrap ? 'flex-wrap' : '') + ` px-${blok.margin || 20}`"
   >
     <div

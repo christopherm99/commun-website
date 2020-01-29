@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-accent text-white text-sans p-20">
+  <div class="bg-accent text-white font-sans p-20">
     <div class="pb-10 text-3xl">
       {{ blok.quote }}
     </div>

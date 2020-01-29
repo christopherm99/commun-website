@@ -49,7 +49,10 @@ export default {
   modules: [
     [
       'storyblok-nuxt',
-      { accessToken: process.env.API_KEY, cacheProvider: 'memory' }
+      {
+        accessToken: process.env.API_KEY || 'mSgFN890vPtSUJZcDrwq5Att',
+        cacheProvider: 'memory'
+      }
     ]
   ],
   /*

@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="px-64 pt-10 pb-20 text-lg text-justify font-light font-serif"
+    class="px-10 lg:px-64 pt-2 lg:pt-10 pb-20 text-base lg:text-lg text-justify font-light font-serif"
   >
     <vue-markdown :source="blok.text" />
   </div>

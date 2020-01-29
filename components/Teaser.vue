@@ -1,10 +1,10 @@
 <template>
   <div
     v-editable="blok"
-    class="teaser flex justify-end items-center bg-fixed bg-cover text-right"
+    class="teaser flex justify-end items-center bg-fixed bg-cover bg-center text-right"
     :style="{ 'background-image': `url(${blok.background})` }"
   >
-    <div class="text-white font-display pr-20">
+    <div class="text-white font-display pr-8 lg:pr-20">
       <h1 class="text-6xl font-medium">
         {{ blok.headline }}
       </h1>

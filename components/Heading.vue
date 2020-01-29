@@ -1,9 +1,9 @@
 <template>
   <h1
     v-editable="blok"
-    class="font-display px-20 pt-5"
+    class="font-display px-10 lg:px-20 pb-5"
     :class="
-      (blok.level == 2 ? 'text-4xl' : 'text-6xl') +
+      (blok.level == 2 ? 'text-2xl lg:text-4xl' : 'text-4xl lg:text-6xl') +
         ` text-${blok.color || 'black'}`
     "
   >

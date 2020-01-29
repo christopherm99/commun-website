@@ -1,7 +1,9 @@
 <template>
   <div v-editable="blok">
     <hero :blok="blok.hero[0]" />
-    <div class="px-64 py-16 text-lg text-justify font-light font-serif">
+    <div
+      class="px-10 lg:px-64 pt-10 pb-16 lg:py-16 text-lg text-justify font-light font-serif"
+    >
       <p class="mb-10">
         {{ blok.description }}
       </p>

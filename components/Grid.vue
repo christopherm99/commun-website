@@ -1,11 +1,19 @@
 <template>
-  <div v-editable="blok" class="flex items-center p-20">
+  <div
+    v-editable="blok"
+    class="flex items-center justify-center py-20"
+    :class="(blok.wrap ? 'flex-wrap' : '') + ` px-${blok.margin || 20}`"
+  >
     <div
-      v-for="blok in blok.components"
-      :key="blok._uid"
-      class="inline-block px-20 flex-1"
+      v-for="subblok in blok.components"
+      :key="subblok._uid"
+      class="inline-block"
+      :class="
+        (blok.wrap ? `flex-none py-${blok.v_space || 10}` : 'flex-1') +
+          ` px-${blok.h_space || 20}`
+      "
     >
-      <component :is="blok.component" :blok="blok" />
+      <component :is="subblok.component" :blok="subblok" />
     </div>
   </div>
 </template>

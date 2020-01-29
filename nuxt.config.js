@@ -1,5 +1,3 @@
-import secrets from './secrets.config'
-
 export default {
   mode: 'spa',
   /*
@@ -51,7 +49,7 @@ export default {
   modules: [
     [
       'storyblok-nuxt',
-      { accessToken: secrets.PREVIEW_KEY, cacheProvider: 'memory' }
+      { accessToken: process.env.API_KEY, cacheProvider: 'memory' }
     ]
   ],
   /*

@@ -11,13 +11,13 @@
 </template>
 
 <script>
-import moment from 'moment'
+import { format } from 'timeago.js'
 
 export default {
   props: ['blok'],
   computed: {
     time() {
-      return moment(this.blok.date).fromNow(false)
+      return format(this.blok.date)
     }
   }
 }

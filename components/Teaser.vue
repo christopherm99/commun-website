@@ -19,13 +19,16 @@
 </template>
 
 <script>
-import moment from 'moment'
-
 export default {
   props: ['blok'],
   computed: {
     date() {
-      return moment(this.blok.date).format('dddd MMMM DD, YYYY')
+      return new Date(this.blok.date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        weekday: 'long'
+      })
     }
   }
 }

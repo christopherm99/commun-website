@@ -1,3 +1,7 @@
+import StoryblokClient from 'storyblok-js-client'
+
+const API_KEY = process.env.API_KEY || 'mSgFN890vPtSUJZcDrwq5Att'
+
 export default {
   mode: 'spa',
   /*
@@ -43,6 +47,19 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss'
   ],
+  generate: {
+    routes() {
+      const Storyblok = new StoryblokClient({
+        accessToken: API_KEY
+      })
+      const version = process.env.API_KEY ? 'draft' : 'published'
+      return Storyblok.get('cdn/stories', {
+        version
+      }).then((response) => {
+        return response.data.stories.map((story) => `/${story.full_slug}`)
+      })
+    }
+  },
   /*
    ** Nuxt.js modules
    */
@@ -50,7 +67,7 @@ export default {
     [
       'storyblok-nuxt',
       {
-        accessToken: process.env.API_KEY || 'mSgFN890vPtSUJZcDrwq5Att',
+        accessToken: API_KEY,
         cacheProvider: 'memory'
       }
     ]

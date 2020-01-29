@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="page"
+    class="page w-full"
     :class="`bg-${blok.background || 'white'}`"
   >
     <component
@@ -18,3 +18,9 @@ export default {
   props: ['blok']
 }
 </script>
+
+<style lang="scss">
+.page {
+  min-height: calc(100vh - 5.5rem - 8rem);
+}
+</style>

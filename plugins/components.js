@@ -11,6 +11,7 @@ import Committee from '~/components/Committee.vue'
 import Hero from '~/components/Hero.vue'
 import Photo from '~/components/Photo.vue'
 import Heading from '~/components/Heading.vue'
+import Markdown from '~/components/Markdown.vue'
 
 Vue.component('page', Page)
 Vue.component('teaser', Teaser)
@@ -24,3 +25,4 @@ Vue.component('committee', Committee)
 Vue.component('hero', Hero)
 Vue.component('photo', Photo)
 Vue.component('heading', Heading)
+Vue.component('markdown', Markdown)

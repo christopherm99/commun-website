@@ -1,8 +1,11 @@
 <template>
   <h1
     v-editable="blok"
-    class="font-display text-6xl px-20 pt-5"
-    :class="`text-${blok.color || 'black'}`"
+    class="font-display px-20 pt-5"
+    :class="
+      (blok.level == 2 ? 'text-4xl' : 'text-6xl') +
+        ` text-${blok.color || 'black'}`
+    "
   >
     {{ blok.title }}
   </h1>

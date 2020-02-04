@@ -3,11 +3,16 @@
     v-editable="blok"
     class="flex p-6 mb-10 mx-10 lg:mx-64 border-gray-400 rounded border"
   >
-    <img :src="blok.image" class="hidden lg:block flex-none" />
+    <img
+      :src="blok.image"
+      class="hidden lg:block flex-none"
+      alt="Profile picture"
+    />
     <div class="lg:flex lg:flex-col lg:justify-between lg:pl-4">
       <img
         :src="blok.image"
         class="lg:hidden rounded-full float-right h-16 w-16 ml-5 mb-2"
+        alt="Profile icture"
       />
       <p class="font-display text-xl">
         {{ blok.name }}

@@ -6,6 +6,7 @@
           <img
             src="https://a.storyblok.com/f/74011/x/c1708a23c5/commun_icon_red.svg"
             class="object-contain h-10 mr-4"
+            alt="COMMUN Logo"
           />
           <span class="font-display font-semibold text-2xl text-primary">
             COMMUN V

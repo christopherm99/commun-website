@@ -4,6 +4,7 @@
       <img
         src="//a.storyblok.com/f/74011/644x155/3c8825b503/unagb-logo.png"
         class="h-20"
+        alt="UNAGB Logo"
       />
     </a>
     <div class="text-white text-right">
@@ -21,6 +22,7 @@
       <img
         src="//a.storyblok.com/f/74011/1652x612/d2028b82e4/commschool_primary_white.png"
         class="h-20"
+        alt="Commonwealth School Logo"
       />
     </a>
   </footer>

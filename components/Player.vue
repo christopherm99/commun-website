@@ -7,6 +7,7 @@
     height="360"
     :src="`https://www.youtube.com/embed/${blok.source_id}?modestbranding=1`"
     frameborder="0"
+    title="Youtube Video"
   />
 </template>
 

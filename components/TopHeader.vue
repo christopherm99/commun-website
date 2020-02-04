@@ -4,7 +4,7 @@
       <div class="flex items-center flex-shrink-0 text-white lg:ml-6">
         <a href="/" class="flex pr-6 items-center">
           <img
-            src="//a.storyblok.com/f/74011/1944x1583/b4cfb4a8c3/commun_icon_red.png"
+            src="https://a.storyblok.com/f/74011/x/c1708a23c5/commun_icon_red.svg"
             class="object-contain h-10 mr-4"
           />
           <span class="font-display font-semibold text-2xl text-primary">

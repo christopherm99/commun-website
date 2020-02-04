@@ -106,9 +106,6 @@ export default {
           (story) => story.full_slug.split('/')[0]
         )
       })
-      .catch((res) => {
-        console.error(res)
-      })
   },
   methods: {
     capitalize,

@@ -5,10 +5,10 @@
     :class="`bg-${blok.background || 'white'}`"
   >
     <component
-      :is="blok.component"
-      v-for="blok in blok.body"
-      :key="blok._uid"
-      :blok="blok"
+      :is="subblok.component"
+      v-for="subblok in blok.body"
+      :key="subblok._uid"
+      :blok="subblok"
     ></component>
   </div>
 </template>
